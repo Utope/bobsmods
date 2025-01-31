@@ -14,7 +14,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         },
         {
           type = "unlock-recipe",
-          recipe = "fast-accumulator-2",
+          recipe = "bob-fast-accumulator-2",
         },
         {
           type = "unlock-recipe",
@@ -52,7 +52,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         },
         {
           type = "unlock-recipe",
-          recipe = "fast-accumulator-3",
+          recipe = "bob-fast-accumulator-3",
         },
         {
           type = "unlock-recipe",
