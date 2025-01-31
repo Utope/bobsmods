@@ -15,7 +15,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "recipe",
-      name = "slow-accumulator",
+      name = "bob-slow-accumulator",
       energy_required = 10,
       enabled = false,
       ingredients = {
@@ -23,7 +23,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         { type = "item", name = "electronic-circuit", amount = 4 },
         { type = "item", name = "battery", amount = 4 },
       },
-      results = { { type = "item", name = "slow-accumulator", amount = 1 } },
+      results = { { type = "item", name = "bob-slow-accumulator", amount = 1 } },
     },
 
     {
@@ -56,16 +56,16 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "recipe",
-      name = "slow-accumulator-2",
+      name = "bob-slow-accumulator-2",
       energy_required = 10,
       enabled = false,
       ingredients = {
-        { type = "item", name = "slow-accumulator", amount = 1 },
+        { type = "item", name = "bob-slow-accumulator", amount = 1 },
         { type = "item", name = "steel-plate", amount = 2 },
         { type = "item", name = "advanced-circuit", amount = 4 },
         { type = "item", name = "battery", amount = 4 },
       },
-      results = { { type = "item", name = "slow-accumulator-2", amount = 1 } },
+      results = { { type = "item", name = "bob-slow-accumulator-2", amount = 1 } },
     },
 
     {
@@ -98,16 +98,16 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "recipe",
-      name = "slow-accumulator-3",
+      name = "bob-slow-accumulator-3",
       energy_required = 10,
       enabled = false,
       ingredients = {
-        { type = "item", name = "slow-accumulator-2", amount = 1 },
+        { type = "item", name = "bob-slow-accumulator-2", amount = 1 },
         { type = "item", name = "steel-plate", amount = 2 },
         { type = "item", name = "processing-unit", amount = 4 },
         { type = "item", name = "battery", amount = 4 },
       },
-      results = { { type = "item", name = "slow-accumulator-3", amount = 1 } },
+      results = { { type = "item", name = "bob-slow-accumulator-3", amount = 1 } },
     },
   })
 end

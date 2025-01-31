@@ -18,7 +18,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         },
         {
           type = "unlock-recipe",
-          recipe = "slow-accumulator-2",
+          recipe = "bob-slow-accumulator-2",
         },
       },
       prerequisites = {
@@ -56,7 +56,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         },
         {
           type = "unlock-recipe",
-          recipe = "slow-accumulator-3",
+          recipe = "bob-slow-accumulator-3",
         },
       },
       prerequisites = {
