@@ -77,8 +77,8 @@ if settings.startup["bobmods-power-accumulators"].value == true then
     input_flow_limit = "600kW",
     output_flow_limit = "600kW",
   }
-  accumulator.localised_name = { "entity-name.large-accumulator" }
-  accumulator.localised_description = { "entity-description.large-accumulator" }
+  accumulator.localised_name = { "entity-name.bob-large-accumulator" }
+  accumulator.localised_description = { "entity-description.bob-large-accumulator" }
   accumulator.drawing_box_vertical_extension = 1
   accumulator.chargable_graphics.picture = bobmods.power.large_accumulator_picture()
   accumulator.chargable_graphics.charge_animation = bobmods.power.large_accumulator_charge()
@@ -268,7 +268,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         fade_out_ticks = 30,
       },
       fast_replaceable_group = "accumulator",
-      next_upgrade = "large-accumulator-3",
+      next_upgrade = "bob-large-accumulator-3",
       circuit_connector = circuit_connector_definitions["accumulator"],
       circuit_wire_max_distance = 10,
       default_output_signal = { type = "virtual", name = "signal-A" },
@@ -384,11 +384,11 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "accumulator",
-      name = "large-accumulator-3",
+      name = "bob-large-accumulator-3",
       icon = "__base__/graphics/icons/accumulator.png",
       icon_size = 64,
       flags = { "placeable-neutral", "player-creation" },
-      minable = { mining_time = 0.5, result = "large-accumulator-3" },
+      minable = { mining_time = 0.5, result = "bob-large-accumulator-3" },
       max_health = 350,
       corpse = "accumulator-remnants",
       dying_explosion = "accumulator-explosion",

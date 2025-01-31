@@ -39,7 +39,7 @@ if feature_flags["quality"] then
     "bob-large-accumulator-2",
     "bob-fast-accumulator-2",
     "bob-slow-accumulator-2",
-    "large-accumulator-3",
+    "bob-large-accumulator-3",
     "bob-fast-accumulator-3",
     "bob-slow-accumulator-3",
     "boiler-2",

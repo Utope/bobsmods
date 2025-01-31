@@ -70,7 +70,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "recipe",
-      name = "large-accumulator-3",
+      name = "bob-large-accumulator-3",
       energy_required = 10,
       enabled = false,
       ingredients = {
@@ -79,7 +79,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
         { type = "item", name = "processing-unit", amount = 2 },
         { type = "item", name = "battery", amount = 10 },
       },
-      results = { { type = "item", name = "large-accumulator-3", amount = 1 } },
+      results = { { type = "item", name = "bob-large-accumulator-3", amount = 1 } },
     },
 
     {
