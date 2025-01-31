@@ -8,11 +8,11 @@ if settings.startup["bobmods-power-poles"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "medium-electric-pole-2",
+          recipe = "bob-medium-electric-pole-2",
         },
         {
           type = "unlock-recipe",
-          recipe = "big-electric-pole-2",
+          recipe = "bob-big-electric-pole-2",
         },
       },
       prerequisites = {
@@ -37,11 +37,11 @@ if settings.startup["bobmods-power-poles"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "medium-electric-pole-3",
+          recipe = "bob-medium-electric-pole-3",
         },
         {
           type = "unlock-recipe",
-          recipe = "big-electric-pole-3",
+          recipe = "bob-big-electric-pole-3",
         },
       },
       prerequisites = {
@@ -68,11 +68,11 @@ if settings.startup["bobmods-power-poles"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "medium-electric-pole-4",
+          recipe = "bob-medium-electric-pole-4",
         },
         {
           type = "unlock-recipe",
-          recipe = "big-electric-pole-4",
+          recipe = "bob-big-electric-pole-4",
         },
       },
       prerequisites = {
@@ -100,7 +100,7 @@ if settings.startup["bobmods-power-poles"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "substation-2",
+          recipe = "bob-substation-2",
         },
       },
       prerequisites = {
@@ -127,7 +127,7 @@ if settings.startup["bobmods-power-poles"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "substation-3",
+          recipe = "bob-substation-3",
         },
       },
       prerequisites = {
@@ -154,7 +154,7 @@ if settings.startup["bobmods-power-poles"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "substation-4",
+          recipe = "bob-substation-4",
         },
       },
       prerequisites = {
