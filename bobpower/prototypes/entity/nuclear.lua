@@ -46,7 +46,7 @@ if settings.startup["bobmods-power-nuclear"].value == true then
     util.merge({
       data.raw.reactor["nuclear-reactor"],
       {
-        name = "nuclear-reactor-2",
+        name = "bob-nuclear-reactor-2",
         localised_description = {
           "",
           { "entity-description.nuclear-reactor" },
@@ -54,7 +54,7 @@ if settings.startup["bobmods-power-nuclear"].value == true then
         },
         icon = "__base__/graphics/icons/nuclear-reactor.png",
         icon_size = 64,
-        minable = { mining_time = 0.5, result = "nuclear-reactor-2" },
+        minable = { mining_time = 0.5, result = "bob-nuclear-reactor-2" },
         max_health = 750,
         consumption = "72MW",
         heat_buffer = {
@@ -95,7 +95,7 @@ if settings.startup["bobmods-power-nuclear"].value == true then
     util.merge({
       data.raw.reactor["nuclear-reactor"],
       {
-        name = "nuclear-reactor-3",
+        name = "bob-nuclear-reactor-3",
         localised_description = {
           "",
           { "entity-description.nuclear-reactor" },
@@ -103,7 +103,7 @@ if settings.startup["bobmods-power-nuclear"].value == true then
         },
         icon = "__base__/graphics/icons/nuclear-reactor.png",
         icon_size = 64,
-        minable = { mining_time = 0.5, result = "nuclear-reactor-3" },
+        minable = { mining_time = 0.5, result = "bob-nuclear-reactor-3" },
         max_health = 1000,
         consumption = "90MW",
         heat_buffer = {
@@ -140,6 +140,6 @@ if settings.startup["bobmods-power-nuclear"].value == true then
     }),
   })
 
-  data.raw.reactor["nuclear-reactor"].next_upgrade = "nuclear-reactor-2"
-  data.raw.reactor["nuclear-reactor-2"].next_upgrade = "nuclear-reactor-3"
+  data.raw.reactor["nuclear-reactor"].next_upgrade = "bob-nuclear-reactor-2"
+  data.raw.reactor["bob-nuclear-reactor-2"].next_upgrade = "bob-nuclear-reactor-3"
 end

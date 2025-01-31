@@ -158,7 +158,7 @@ end
 
 if
   data.raw.item["bob-thorium-fuel-cell"]
-  and data.raw.reactor["nuclear-reactor-2"]
+  and data.raw.reactor["bob-nuclear-reactor-2"]
   and settings.startup["bobmods-revamp-nuclear"].value == true
 then
   data.raw.item["nuclear-reactor"].localised_name = { "entity-name.uranium-reactor" }
@@ -173,13 +173,13 @@ then
       name = "thorium",
     },
   })
-  data.raw.reactor["nuclear-reactor-2"].energy_source.fuel_categories = { "thorium" }
-  data.raw.reactor["nuclear-reactor-2"].localised_name = { "entity-name.thorium-reactor" }
-  data.raw.reactor["nuclear-reactor-2"].localised_description =
+  data.raw.reactor["bob-nuclear-reactor-2"].energy_source.fuel_categories = { "thorium" }
+  data.raw.reactor["bob-nuclear-reactor-2"].localised_name = { "entity-name.thorium-reactor" }
+  data.raw.reactor["bob-nuclear-reactor-2"].localised_description =
     { "", { "entity-description.thorium-reactor" }, { "entity-description.reactor-max-temperature", "1250" } }
-  data.raw.reactor["nuclear-reactor-2"].default_fuel_glow_color = { r = 1.0, g = 1.0, b = 0.0 }
-  data.raw.reactor["nuclear-reactor-2"].icon = "__bobrevamp__/graphics/icons/thorium-reactor.png"
-  data.raw.reactor["nuclear-reactor-2"].icon_size = 32
+  data.raw.reactor["bob-nuclear-reactor-2"].default_fuel_glow_color = { r = 1.0, g = 1.0, b = 0.0 }
+  data.raw.reactor["bob-nuclear-reactor-2"].icon = "__bobrevamp__/graphics/icons/thorium-reactor.png"
+  data.raw.reactor["bob-nuclear-reactor-2"].icon_size = 32
 
   data.raw.item["bob-thorium-fuel-cell"].fuel_category = "thorium"
   if data.raw.item["bob-thorium-plutonium-fuel-cell"] then
@@ -193,11 +193,11 @@ then
     )
   end
 
-  data.raw.item["nuclear-reactor-2"].localised_name = { "entity-name.thorium-reactor" }
-  data.raw.item["nuclear-reactor-2"].icon = "__bobrevamp__/graphics/icons/thorium-reactor.png"
-  data.raw.item["nuclear-reactor-2"].icon_size = 32
+  data.raw.item["bob-nuclear-reactor-2"].localised_name = { "entity-name.thorium-reactor" }
+  data.raw.item["bob-nuclear-reactor-2"].icon = "__bobrevamp__/graphics/icons/thorium-reactor.png"
+  data.raw.item["bob-nuclear-reactor-2"].icon_size = 32
 
-  bobmods.lib.recipe.remove_ingredient("nuclear-reactor-2", "nuclear-reactor")
+  bobmods.lib.recipe.remove_ingredient("bob-nuclear-reactor-2", "nuclear-reactor")
 
   data.raw.technology["bob-nuclear-power-2"].icon = "__bobrevamp__/graphics/icons/technology/thorium-nuclear-power.png"
   data.raw.technology["bob-nuclear-power-2"].icon_size = 128
@@ -218,13 +218,13 @@ then
   )
 
   if feature_flags["quality"] then
-    bobmods.lib.recipe.update_recycling_recipe_single("nuclear-reactor-2", true)
+    bobmods.lib.recipe.update_recycling_recipe_single("bob-nuclear-reactor-2", true)
   end
 end
 
 if
   data.raw.item["bob-deuterium-fuel-cell"]
-  and data.raw.reactor["nuclear-reactor-3"]
+  and data.raw.reactor["bob-nuclear-reactor-3"]
   and settings.startup["bobmods-revamp-nuclear"].value == true
 then
   data:extend({
@@ -233,11 +233,11 @@ then
       name = "bob-deuterium",
     },
   })
-  data.raw.reactor["nuclear-reactor-3"].energy_source.fuel_categories = { "bob-deuterium" }
-  data.raw.reactor["nuclear-reactor-3"].localised_name = { "entity-name.deuterium-reactor" }
-  data.raw.reactor["nuclear-reactor-3"].localised_description =
+  data.raw.reactor["bob-nuclear-reactor-3"].energy_source.fuel_categories = { "bob-deuterium" }
+  data.raw.reactor["bob-nuclear-reactor-3"].localised_name = { "entity-name.deuterium-reactor" }
+  data.raw.reactor["bob-nuclear-reactor-3"].localised_description =
     { "", { "entity-description.deuterium-reactor" }, { "entity-description.reactor-max-temperature", "1500" } }
-  data.raw.reactor["nuclear-reactor-3"].icon_size = 32
+  data.raw.reactor["bob-nuclear-reactor-3"].icon_size = 32
 
   data.raw.item["bob-deuterium-fuel-cell"].fuel_category = "bob-deuterium"
   if data.raw.item["bob-deuterium-fuel-cell-2"] then
@@ -251,10 +251,10 @@ then
     )
   end
 
-  data.raw.item["nuclear-reactor-3"].localised_name = { "entity-name.deuterium-reactor" }
-  data.raw.item["nuclear-reactor-3"].icon_size = 32
+  data.raw.item["bob-nuclear-reactor-3"].localised_name = { "entity-name.deuterium-reactor" }
+  data.raw.item["bob-nuclear-reactor-3"].icon_size = 32
 
-  bobmods.lib.recipe.remove_ingredient("nuclear-reactor-3", "nuclear-reactor-2")
+  bobmods.lib.recipe.remove_ingredient("bob-nuclear-reactor-3", "bob-nuclear-reactor-2")
 
   data.raw.technology["bob-nuclear-power-3"].localised_name = { "technology-name.deuterium-power" }
   data.raw.technology["bob-nuclear-power-3"].icon_size = 128
@@ -275,21 +275,21 @@ then
     settings.startup["bobmods-plates-bluedeuterium"]
     and settings.startup["bobmods-plates-bluedeuterium"].value == true
   then
-    data.raw.reactor["nuclear-reactor-3"].default_fuel_glow_color = { r = 0, g = 0.7, b = 1 }
-    data.raw.reactor["nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor-blue.png"
-    data.raw.item["nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor-blue.png"
+    data.raw.reactor["bob-nuclear-reactor-3"].default_fuel_glow_color = { r = 0, g = 0.7, b = 1 }
+    data.raw.reactor["bob-nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor-blue.png"
+    data.raw.item["bob-nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor-blue.png"
     data.raw.technology["bob-nuclear-power-3"].icon =
       "__bobrevamp__/graphics/icons/technology/deuterium-nuclear-power-blue.png"
   else
-    data.raw.reactor["nuclear-reactor-3"].default_fuel_glow_color = { r = 1, g = 0, b = 0.57 }
-    data.raw.reactor["nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor.png"
-    data.raw.item["nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor.png"
+    data.raw.reactor["bob-nuclear-reactor-3"].default_fuel_glow_color = { r = 1, g = 0, b = 0.57 }
+    data.raw.reactor["bob-nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor.png"
+    data.raw.item["bob-nuclear-reactor-3"].icon = "__bobrevamp__/graphics/icons/deuterium-reactor.png"
     data.raw.technology["bob-nuclear-power-3"].icon =
       "__bobrevamp__/graphics/icons/technology/deuterium-nuclear-power.png"
   end
 
   if feature_flags["quality"] then
-    bobmods.lib.recipe.update_recycling_recipe_single("nuclear-reactor-3", true)
+    bobmods.lib.recipe.update_recycling_recipe_single("bob-nuclear-reactor-3", true)
   end
 end
 
