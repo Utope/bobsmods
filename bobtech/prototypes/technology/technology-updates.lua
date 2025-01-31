@@ -263,7 +263,7 @@ if settings.startup["bobmods-burnerphase"].value == true then
   if mods["bobelectronics"] then
     bobmods.lib.tech.remove_prerequisite("automation-2", "electronics")
     if mods["bobpower"] then
-      bobmods.lib.tech.remove_prerequisite("fluid-generator-1", "electronics")
+      bobmods.lib.tech.remove_prerequisite("bob-fluid-generator-1", "electronics")
     end
     if mods["bobmining"] then
       bobmods.lib.tech.remove_prerequisite("water-miner-2", "electronics")
@@ -318,7 +318,7 @@ if settings.startup["bobmods-burnerphase"].value == true then
     end
     bobmods.lib.tech.remove_prerequisite("bob-steam-engine-2", "logistic-science-pack")
     bobmods.lib.tech.remove_prerequisite("bob-boiler-2", "logistic-science-pack")
-    bobmods.lib.tech.remove_prerequisite("fluid-generator-1", "logistic-science-pack")
+    bobmods.lib.tech.remove_prerequisite("bob-fluid-generator-1", "logistic-science-pack")
     bobmods.lib.tech.remove_prerequisite("bob-heat-pipe-1", "logistic-science-pack")
   end
 

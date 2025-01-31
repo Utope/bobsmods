@@ -2,11 +2,11 @@ if settings.startup["bobmods-power-fluidgenerator"].value == true then
   data:extend({
     {
       type = "item",
-      name = "fluid-generator",
+      name = "bob-fluid-generator",
       icon = "__bobpower__/graphics/icons/fluid-generator.png",
       subgroup = "bob-energy-fluid-generator",
-      order = "fluid-generator-1",
-      place_result = "fluid-generator",
+      order = "bob-fluid-generator-1",
+      place_result = "bob-fluid-generator",
       stack_size = 10,
       drop_sound = {
         filename = "__base__/sound/item/mechanical-inventory-move.ogg",
@@ -24,11 +24,11 @@ if settings.startup["bobmods-power-fluidgenerator"].value == true then
 
     {
       type = "item",
-      name = "fluid-generator-2",
+      name = "bob-fluid-generator-2",
       icon = "__bobpower__/graphics/icons/fluid-generator.png",
       subgroup = "bob-energy-fluid-generator",
-      order = "fluid-generator-1",
-      place_result = "fluid-generator-2",
+      order = "bob-fluid-generator-1",
+      place_result = "bob-fluid-generator-2",
       stack_size = 10,
       drop_sound = {
         filename = "__base__/sound/item/mechanical-inventory-move.ogg",
@@ -49,8 +49,8 @@ if settings.startup["bobmods-power-fluidgenerator"].value == true then
       name = "fluid-generator-3",
       icon = "__bobpower__/graphics/icons/fluid-generator.png",
       subgroup = "bob-energy-fluid-generator",
-      order = "fluid-generator-1",
-      place_result = "fluid-generator-3",
+      order = "bob-fluid-generator-1",
+      place_result = "bob-fluid-generator-3",
       stack_size = 10,
       drop_sound = {
         filename = "__base__/sound/item/mechanical-inventory-move.ogg",
@@ -79,7 +79,7 @@ if settings.startup["bobmods-power-fluidgenerator"].value == true then
         name = "hydrazine-generator",
         icon = "__bobpower__/graphics/icons/fluid-generator.png",
         subgroup = "bob-energy-fluid-generator",
-        order = "fluid-generator-1",
+        order = "bob-fluid-generator-1",
         place_result = "hydrazine-generator",
         stack_size = 10,
         drop_sound = {
