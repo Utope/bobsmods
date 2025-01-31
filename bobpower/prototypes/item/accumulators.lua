@@ -42,12 +42,12 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "item",
-      name = "large-accumulator-2",
+      name = "bob-large-accumulator-2",
       icon = "__base__/graphics/icons/accumulator.png",
       icon_size = 64,
       subgroup = "bob-energy-accumulator",
       order = "e[accumulator]-a[accumulator]-b-l",
-      place_result = "large-accumulator-2",
+      place_result = "bob-large-accumulator-2",
       stack_size = 50,
       drop_sound = electric_large_drop_move,
       inventory_move_sound = electric_large_drop_move,

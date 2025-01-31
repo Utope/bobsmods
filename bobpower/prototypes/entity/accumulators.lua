@@ -69,7 +69,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
   local accumulator = data.raw["accumulator"]["accumulator"]
   accumulator.fast_replaceable_group = "accumulator"
-  accumulator.next_upgrade = "large-accumulator-2"
+  accumulator.next_upgrade = "bob-large-accumulator-2"
   accumulator.energy_source = {
     type = "electric",
     buffer_capacity = "10MJ",
@@ -222,11 +222,11 @@ if settings.startup["bobmods-power-accumulators"].value == true then
 
     {
       type = "accumulator",
-      name = "large-accumulator-2",
+      name = "bob-large-accumulator-2",
       icon = "__base__/graphics/icons/accumulator.png",
       icon_size = 64,
       flags = { "placeable-neutral", "player-creation" },
-      minable = { mining_time = 0.5, result = "large-accumulator-2" },
+      minable = { mining_time = 0.5, result = "bob-large-accumulator-2" },
       max_health = 250,
       corpse = "accumulator-remnants",
       dying_explosion = "accumulator-explosion",

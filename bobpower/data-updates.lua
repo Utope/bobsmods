@@ -36,7 +36,7 @@ if feature_flags["quality"] then
     "heat-pipe-3",
     "heat-pipe-4",
     "accumulator",
-    "large-accumulator-2",
+    "bob-large-accumulator-2",
     "fast-accumulator-2",
     "slow-accumulator-2",
     "large-accumulator-3",

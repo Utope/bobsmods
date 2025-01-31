@@ -10,7 +10,7 @@ if settings.startup["bobmods-power-accumulators"].value == true then
       effects = {
         {
           type = "unlock-recipe",
-          recipe = "large-accumulator-2",
+          recipe = "bob-large-accumulator-2",
         },
         {
           type = "unlock-recipe",

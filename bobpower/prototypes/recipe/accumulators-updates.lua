@@ -1,6 +1,6 @@
 if settings.startup["bobmods-power-accumulators"].value == true then
   if data.raw.item["bob-lithium-ion-battery"] then
-    bobmods.lib.recipe.replace_ingredient("large-accumulator-2", "battery", "bob-lithium-ion-battery")
+    bobmods.lib.recipe.replace_ingredient("bob-large-accumulator-2", "battery", "bob-lithium-ion-battery")
     bobmods.lib.recipe.replace_ingredient("fast-accumulator-2", "battery", "bob-lithium-ion-battery")
     bobmods.lib.recipe.replace_ingredient("slow-accumulator-2", "battery", "bob-lithium-ion-battery")
     bobmods.lib.tech.add_prerequisite("bob-electric-energy-accumulators-2", "bob-battery-2")
