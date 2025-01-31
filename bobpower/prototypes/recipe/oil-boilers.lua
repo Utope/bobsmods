@@ -5,7 +5,7 @@ if settings.startup["bobmods-power-steam"].value == true then
       name = "oil-boiler",
       enabled = false,
       ingredients = {
-        { type = "item", name = "boiler-2", amount = 1 },
+        { type = "item", name = "bob-boiler-2", amount = 1 },
         { type = "item", name = "pipe", amount = 2 },
       },
       results = { { type = "item", name = "oil-boiler", amount = 1 } },
@@ -57,7 +57,7 @@ if settings.startup["bobmods-power-steam"].value == true then
         subgroup = "bob-energy-oil-boiler-convert",
         enabled = false,
         ingredients = {
-          { type = "item", name = "boiler-3", amount = 1 },
+          { type = "item", name = "bob-boiler-3", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
         results = { { type = "item", name = "oil-boiler-2", amount = 1 } },
@@ -71,7 +71,7 @@ if settings.startup["bobmods-power-steam"].value == true then
         subgroup = "bob-energy-oil-boiler-convert",
         enabled = false,
         ingredients = {
-          { type = "item", name = "boiler-4", amount = 1 },
+          { type = "item", name = "bob-boiler-4", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
         results = { { type = "item", name = "oil-boiler-3", amount = 1 } },
@@ -85,7 +85,7 @@ if settings.startup["bobmods-power-steam"].value == true then
         subgroup = "bob-energy-oil-boiler-convert",
         enabled = false,
         ingredients = {
-          { type = "item", name = "boiler-5", amount = 1 },
+          { type = "item", name = "bob-boiler-5", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
         results = { { type = "item", name = "oil-boiler-4", amount = 1 } },
@@ -96,68 +96,68 @@ if settings.startup["bobmods-power-steam"].value == true then
       {
         type = "recipe",
         name = "boiler-2-from-oil-boiler",
-        localised_name = { "entity-name.boiler-2" },
+        localised_name = { "entity-name.bob-boiler-2" },
         subgroup = "bob-energy-boiler-convert",
         enabled = false,
         ingredients = {
           { type = "item", name = "oil-boiler", amount = 1 },
         },
         results = {
-          { type = "item", name = "boiler-2", amount = 1 },
+          { type = "item", name = "bob-boiler-2", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
-        main_product = "boiler-2",
+        main_product = "bob-boiler-2",
         allow_as_intermediate = false,
       },
 
       {
         type = "recipe",
         name = "boiler-3-from-oil-boiler-2",
-        localised_name = { "entity-name.boiler-3" },
+        localised_name = { "entity-name.bob-boiler-3" },
         subgroup = "bob-energy-boiler-convert",
         enabled = false,
         ingredients = {
           { type = "item", name = "oil-boiler-2", amount = 1 },
         },
         results = {
-          { type = "item", name = "boiler-3", amount = 1 },
+          { type = "item", name = "bob-boiler-3", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
-        main_product = "boiler-3",
+        main_product = "bob-boiler-3",
         allow_as_intermediate = false,
       },
 
       {
         type = "recipe",
         name = "boiler-4-from-oil-boiler-3",
-        localised_name = { "entity-name.boiler-4" },
+        localised_name = { "entity-name.bob-boiler-4" },
         subgroup = "bob-energy-boiler-convert",
         enabled = false,
         ingredients = {
           { type = "item", name = "oil-boiler-3", amount = 1 },
         },
         results = {
-          { type = "item", name = "boiler-4", amount = 1 },
+          { type = "item", name = "bob-boiler-4", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
-        main_product = "boiler-4",
+        main_product = "bob-boiler-4",
         allow_as_intermediate = false,
       },
 
       {
         type = "recipe",
         name = "boiler-5-from-oil-boiler-4",
-        localised_name = { "entity-name.boiler-5" },
+        localised_name = { "entity-name.bob-boiler-5" },
         subgroup = "bob-energy-boiler-convert",
         enabled = false,
         ingredients = {
           { type = "item", name = "oil-boiler-4", amount = 1 },
         },
         results = {
-          { type = "item", name = "boiler-5", amount = 1 },
+          { type = "item", name = "bob-boiler-5", amount = 1 },
           { type = "item", name = "pipe", amount = 2 },
         },
-        main_product = "boiler-5",
+        main_product = "bob-boiler-5",
         allow_as_intermediate = false,
       },
     })
